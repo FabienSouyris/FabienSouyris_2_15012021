@@ -32,6 +32,14 @@ a
     text-decoration: none;
 }
 
+figure, h3, p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 #main_header
 {
 
