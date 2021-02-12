@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="Reservia.css" />
-        <link rel="stylesheet" href="/fontawesome-free-5.15.2-web/css/all.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
         <title>Reservia</title>
         <!--meta : <meta name="viewport" content="width=device-width, initial-scale=1"> dire comment s"utilise le site en version mobile-->
     </head>
@@ -19,8 +19,8 @@
             <!--navigation menu with hosting, activities and subscribe-->
             <nav id="main_menu">
                 <ul id="list_menu">
-                    <li><a href="#" id="first_link">Hébergements</a></li>
-                    <li><a href="#"id="second_link">Activités</a></li>
+                    <li><a href="#hosting" id="first_link">Hébergements</a></li>
+                    <li><a href="#activities"id="second_link">Activités</a></li>
                     <li><a href="#" id="third_link">S'inscrire</a></li>
                 </ul>
             </nav>
@@ -95,162 +95,234 @@
 
             <section id="hosting"> <!--partie hébergements-->
                 <section id="hosting_main">
-                    <h2 id="osting_main_title">Hébergement à Marseille</h2>
+                    <h2 id="hosting_main_title">Hébergement à Marseille</h2>
                     <ul id= "hosting_main_list">
                         <li class="hosting_main_cards">
-                            <div class="hosting_main_div">
-                                <a href="#" class="hosting_main_cards_link">
-                                    <figure class="hosting_main_cards_figure">
-                                        <img src="Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
-                                        <figcaption class="hosting_main_cards_caption"> Auberge de la canebière</figcaption>
-                                    </figure>
-                                    <p class="hosting_main_cards_text">Nuit à partir de <strong class="hosting_main_cards_text_price">25€</strong></p>
-                                    <div class="hosting_main_cards_stars">
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="false"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="hosting_main_cards_link">
+                                <img src="Projet 2 - Reservia/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
+                                <div class="hosting_main_cards_informations">
+                                    <h3 class="hosting_cards_title"> Auberge de la canebière</h3>
+                                    <p class="hosting_cards_text">Nuit à partir de <strong class="hosting_main_cards_text_price">25€</strong></p>
+                                    <ol class="hosting_stars">
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="false"></i></li>
+                                    </ol>
+                                </div>
+                            </a>
                         </li>
                         <li class="hosting_main_cards">
-                            <div class="hosting_main_div">
-                                <a href="#" class="hosting_main_cards_link">
-                                    <figure class="hosting_main_cards_figure">
-                                        <img src="Projet 2 - Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
-                                        <figcaption class="hosting_main_cards_caption"> Hôtel du port</figcaption>
-                                    </figure>
-                                    <p class="hosting_main_cards_text">Nuit à partir de <strong class="hosting_main_cards_text_price">52€</strong></p>
-                                    <div class="hosting_main_cards_stars">
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="hosting_main_cards_link">
+                                <img src="Projet 2 - Reservia/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
+                                <div class="hosting_main_cards_informations">
+                                    <h3 class="hosting_cards_title"> Hôtel du port</h3>
+                                    <p class="hosting_cards_text">Nuit à partir de <strong class="hosting_cards_text_price">52€</strong></p>
+                                    <ol class="hosting_stars">
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                    </ol>
+                                </div>
+                            </a>
                         </li>
                         <li class="hosting_main_cards">
-                            <div class="hosting_main_div">
-                                <a href="#" class="hosting_main_cards_link">
-                                    <figure class="hosting_main_cards_figure">
-                                        <img src="Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
-                                        <figcaption class="hosting_main_cards_caption"> Hôtel des mouettes</figcaption>
-                                    </figure>
-                                    <p class="hosting_main_cards_text">Nuit à partir de <strong class="hosting_main_cards_text_price">76€</strong></p>
-                                    <div class="hosting_main_cards_stars">
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="false"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="hosting_main_cards_link">
+                                <img src="Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
+                                <div class="hosting_main_cards_informations">
+                                    <h3 class="hosting_cards_title"> Hôtel des mouettes</h3>
+                                    <p class="hosting_cards_text">Nuit à partir de <strong class="hosting_cards_text_price">76€</strong></p>
+                                    <ol class="hosting_stars">
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="false"></i></li>
+                                    </ol>
+                                </div>
+                            </a>
                         </li>
                         <li class="hosting_main_cards">
-                            <div class="hosting_main_div">
-                                <a href="#" class="hosting_main_cards_link">
-                                    <figure class="hosting_main_cards_figure">
-                                        <img src="Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
-                                        <figcaption class="hosting_main_cards_caption"> Hôtel de la mer</figcaption>
-                                    </figure>
-                                    <p class="hosting_main_cards_text">Nuit à partir de <strong class="hosting_main_cards_text_price">46€</strong></p>
-                                    <div class="hosting_main_cards_stars">
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="false"></i>
-                                        <i class="fas fa-star icon_star" data-active="false"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="hosting_main_cards_link">
+                                <img src="Projet 2 - Reservia/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
+                                <div class="hosting_main_cards_informations">
+                                    <h3 class="hosting_cards_title"> Hôtel de la mer</h3>
+                                    <p class="hosting_cards_text">Nuit à partir de <strong class="hosting_cards_text_price">46€</strong></p>
+                                    <ol class="hosting_stars">
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="false"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="false"></i></li>
+                                    </ol>
+                                </div>
+                            </a>
                         </li>
                         <li class="hosting_main_cards">
-                            <div class="hosting_main_div">
-                                <a href="#" class="hosting_main_cards_link">
-                                    <figure class="hosting_main_cards_figure">
-                                        <img src="Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
-                                        <figcaption class="hosting_main_cards_caption"> Auberge le panier</figcaption>                                        
-                                    </figure>
-                                    <p class="hosting_main_cards_text">Nuit à partir de <strong class="hosting_main_cards_text_price">23€</strong></p>
-                                    <div class="hosting_main_cards_stars">
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="false"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="hosting_main_cards_link">
+                                <img src="Projet 2 - Reservia/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
+                                <div class="hosting_main_cards_informations">
+                                    <h3 class="hosting_cards_title"> Auberge le panier</h3>
+                                    <p class="hosting_cards_text">Nuit à partir de <strong class="hosting_cards_text_price">23€</strong></p>
+                                    <ol class="hosting_stars">
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="false"></i></li>
+                                    </ol>
+                                </div>
+                            </a>
                         </li>
                         <li class="hosting_main_cards">
-                            <div class="hosting_main_div">
-                                <a href="#" class="hosting_main_cards_link">
-                                    <figure class="hosting_main_cards_figure">
-                                        <img src="Projet 2 - Reservia/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
-                                        <figcaption class="hosting_main_cards_caption"> Hôtel chez Amina</figcaption>                                        
-                                    </figure>
-                                    <p class="hosting_main_cards_text">Nuit à partir de <strong class="hosting_main_cards_text_price">96€</strong></p>
-                                    <div class="hosting_main_cards_stars">
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                        <i class="fas fa-star icon_star" data-active="true"></i>
-                                    </div>
-                                </a>
-                            </div>
+                            <a href="#" class="hosting_main_cards_link">
+                                <img src="Projet 2 - Reservia/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="chambre d'hôtel lit superposés" class="hosting_main_cards_images" />
+                                <div class="hosting_main_cards_informations">
+                                    <h3 class="hosting_cards_title"> Hôtel chez Amina</h3>
+                                    <p class="hosting_cards_text">Nuit à partir de <span class="hosting_cards_text_price">96€</span></p>
+                                    <ol class="hosting_stars">
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                    </ol>
+                                </div>
+                            </a>
                         </li>
                     </ul>
+                    <a href="#" id="hosting_main_show_more">Afficher plus</a>
                 </section>
 
+                <!--Popular hostings section-->
 
-                <section id="hosting_popular">                   
-                        <h2 id="popular_icon_title">Les plus populaires
-                        <spann id="chart"><i class="fas fa-chart-line" ></i></spann>
+                <section id="popular_hosting">                   
+                        <h2 id="popular_hosting_title">Les plus populaires
+                        <span id="popular_hosting_chart"><i class="fas fa-chart-line " ></i></span>
                         </h2>
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                        <ul id="popular_hosting_list">
+                            <li class="popular_hosting_cards">
+                                <a href="#" class="popular_hosting_link">
+                                    <img src="Projet 2 - Reservia/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="photo d'hôtel" class="popular_hosting_cards_images" />
+                                    <div class="popular_hosting_cards_informations">
+                                        <h3 class="hosting_cards_title">Hôtel Le soleil du matin</h3>
+                                        <p class="hosting_cards_text">Nuit à partir de <span class="hosting_cards_text_price">128€</span></p>
+                                        <ol class="popular_hosting_stars">
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                        </ol>                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="popular_hosting_cards">
+                                <a href="#" class="popular_hosting_link">
+                                    <img src="Projet 2 - Reservia/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="photo d'hôtel" class="popular_hosting_cards_images"/>
+                                    <div class="popular_hosting_cards_informations">
+                                        <h3 class="hosting_cards_title">Au coeur de l'eau Chambres d'hôtes</h3>
+                                        <p class="hosting_cards_text">Nuit à partir de <span class="hosting_cards_text_price">71€</span></p>
+                                        <ol class="popular_hosting_stars">
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="false"></i></li>
+                                        </ol>                                        
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="popular_hosting_cards">
+                                <a href="#" class="popular_hosting_link">
+                                    <img src="Projet 2 - Reservia/images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="photo d'hôtel" class="popular_hosting_cards_images"/>
+                                    <div class="popular_hosting_cards_informations">
+                                        <h3 class="hosting_cards_title">Hôtel Tout bleu et blanc</h3>
+                                        <p class="hosting_cards_text">Nuit à partir de <span class="hosting_cards_text_price">68€</span></p>
+                                        <ol class="popular_hosting_stars">
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="true"></i></li>
+                                            <li><i class="fas fa-star icon_star" data-active="false"></i></li>
+                                        </ol>                                        
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                 </section>
             </section>
 
 
-            <section id="activity">
-                <h2>Activités à Marseille</h2>
+            <section id="activities">
+                <h2 id="activities_main_title">Activités à Marseille</h2>
+                <ul id="activities_list">
+                    <li class="activities_cards" id="activities_first_card" >
+                        <a href="#" class="activities_link">
+                            <img src="Projet 2 - Reservia/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="photo_de_paysage_provençal" class="activities_cards_images_big" />
+                            <h3 class="activities_cards_title">Vieux Port</h3>
+                        </a>
+                    </li>
+                    <li class="activities_cards" id="activities_second_card">
+                        <a href="#" class="activities_link">
+                            <img src="Projet 2 - Reservia/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="photo_de_paysage_provençal" class="activities_cards_images_small"/>
+                            <h3 class="activities_cards_title">Fort du Pomègues</h3>
+                        </a>
+                    </li>
+                    <li class="activities_cards" id="activities_third_card">
+                        <a href="#" class="activities_link">
+                            <img src="Projet 2 - Reservia/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="photo_de_paysage_provençal" class="activities_cards_images_small" />
+                            <h3 class="activities_cards_title">Iles du Prioul</h3>
+                        </a>
+                    </li>
+                    <li class="activities_cards" id="activities_fourth_card">
+                        <a href="#" class="activities_link">
+                            <img src="Projet 2 - Reservia/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="photo_de_paysage_provençal"  class="activities_cards_images_big" />
+                            <h3 class="activities_cards_title">Parc National des Calanques</h3>
+                        </a>
+                    </li>
+                    <li class="activities_cards" id="activities_fifth_card">
+                        <a href="#" class="activities_link">
+                            <img src="Projet 2 - Reservia/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="photo_de_paysage_provençal"class="activities_cards_images_small" />
+                            <h3 class="activities_cards_title">Notre-Dame-de-la-Garde</h3>
+                        </a>
+                    </li>
+                    <li class="activities_cards" id="activities_sixth_card">
+                        <a href="#" class="activities_link">
+                            <img src="Projet 2 - Reservia/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="photo_de_paysage_provençal" class="activities_cards_images_small" />
+                            <h3 class="activities_cards_title">Parc Longchamp</h3>
+                        </a>
+                    </li>                   
+                </ul>
 
             </section>
         </main>
+
         <!--footer-->
-        <footer id="footer_section">
-            <div id="footer_columns_flex">
+
+        <footer id="footer_section">            
                 <!--first footer column-->
-                <div class="footer_columns_indiv">
-                    <h3>A propos</h3>
-                    <a href="#" class="footer_column_links">Fonctionnement du site</a>
-                    <a href="#" class="footer_column_links">Conditions générales de vente</a>
-                    <a href="#" class="footer_column_links">Données de confidentialités</a>
-                </div>
+                <ul class="footer_columns_indiv">
+                    <li></li><h3>A propos</h3></li>
+                    <li><a href="#" class="footer_column_links">Fonctionnement du site</a></li>
+                    <li><a href="#" class="footer_column_links">Conditions générales de vente</a></li>
+                    <li><a href="#" class="footer_column_links">Données de confidentialités</a></li>
+                </ul>
                 <!--second footer column-->
-                <div class="footer_columns_indiv">
+                <ul class="footer_columns_indiv">
                     <h3>Nos hébergements</h3>
                     <a href="#" class="footer_column_links">Charte qualité</a>
                     <a href="#" class="footer_column_links">Soumettre votre hôtel</a>                    
-                </div>
+                </ul>
                 <!--third footer column-->
-                <div class="footer_columns_indiv">
+                <ul class="footer_columns_indiv">
                     <h3>Centre d'aide</h3>
                     <a href="#" class="footer_column_links">Centre d'aide</a>
-                    <a href="#" class="footer_column_links">Nous contacter</a>
-                    
-                </div>
-            </div>
+                    <a href="#" class="footer_column_links">Nous contacter</a>                    
+                </ul>          
         </footer>
 
 
