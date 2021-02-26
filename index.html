@@ -5,23 +5,24 @@
         <link rel="stylesheet" href="Reservia.css" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
         <title>Reservia</title>
-        <!--meta : <meta name="viewport" content="width=device-width, initial-scale=1"> dire comment s"utilise le site en version mobile-->
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
     </head>
     
     <!--background of the main page-->
     <body>
         <!--header with the logo and the navigation menu-->
         <header id="main_header">
-            <div id="logo_reservia"> 
-                <img src="Projet 2 - Reservia/images/logo/Reservia.svg" alt="logo reservia">
-            </div>
+            
+                
+            
             
             <!--navigation menu with hosting, activities and subscribe-->
             <nav id="main_menu">
                 <ul id="list_menu">
-                    <li><a href="#hosting" id="first_link">Hébergements</a></li>
-                    <li><a href="#activities"id="second_link">Activités</a></li>
-                    <li><a href="#" id="third_link">S'inscrire</a></li>
+                    <li id="logo_reservia"><img src="Projet 2 - Reservia/images/logo/Reservia.svg" alt="logo reservia"></li>
+                    <li id="first_li"><a href="#hosting_main" id="first_link">Hébergements</a></li>
+                    <li id="second_li"><a href="#activities"id="second_link">Activités</a></li>
+                    <li id="third_li"><a href="#" id="third_link">S'inscrire</a></li>
                 </ul>
             </nav>
         </header>
@@ -44,9 +45,11 @@
                     <span id="map_marker">
                         <i class="fas fa-map-marker-alt"></i> 
                     </span>
-                    <input type="search" name="adresse" id="search_input" placeholder="Marseille, France" size="50" /> 
+                    <input type="search" name="adresse" id="search_input_1" placeholder="Marseille, France" size="50" />
+                    <input type="search" name="adresse" id="search_input_2" placeholder="Marseille" size="50" /> 
                     <button id="search_button">
                         <span id="search_button_text">Rechercher</span>
+                        <span id="search_button_icon"><i class="fas fa-search"></i></span>
                     </button>
                 </form>
 
@@ -306,22 +309,22 @@
         <footer id="footer_section">            
                 <!--first footer column-->
                 <ul class="footer_columns_indiv">
-                    <li></li><h3>A propos</h3></li>
-                    <li><a href="#" class="footer_column_links">Fonctionnement du site</a></li>
-                    <li><a href="#" class="footer_column_links">Conditions générales de vente</a></li>
-                    <li><a href="#" class="footer_column_links">Données de confidentialités</a></li>
+                    <li class="footer_columns_bullets"><h3 class="footer_columns_bullets_title">A propos</h3></li>
+                    <li class="footer_columns_bullets"><a href="#" class="footer_column_links">Fonctionnement du site</a></li>
+                    <li class="footer_columns_bullets"><a href="#" class="footer_column_links">Conditions générales de vente</a></li>
+                    <li class="footer_columns_bullets"><a href="#" class="footer_column_links">Données de confidentialités</a></li>
                 </ul>
                 <!--second footer column-->
                 <ul class="footer_columns_indiv">
-                    <h3>Nos hébergements</h3>
-                    <a href="#" class="footer_column_links">Charte qualité</a>
-                    <a href="#" class="footer_column_links">Soumettre votre hôtel</a>                    
+                    <li class="footer_columns_bullets"><h3 class="footer_columns_bullets_title">Nos hébergements</h3></li>
+                    <li class="footer_columns_bullets"><a href="#" class="footer_column_links">Charte qualité</a></li>
+                    <li class="footer_columns_bullets"><a href="#" class="footer_column_links">Soumettre votre hôtel</a></li>                 
                 </ul>
                 <!--third footer column-->
                 <ul class="footer_columns_indiv">
-                    <h3>Centre d'aide</h3>
-                    <a href="#" class="footer_column_links">Centre d'aide</a>
-                    <a href="#" class="footer_column_links">Nous contacter</a>                    
+                    <li class="footer_columns_bullets"><h3 class="footer_columns_bullets_title">Assistance</h3></li>
+                    <li class="footer_columns_bullets"><a href="#" class="footer_column_links">Centre d'aide</a></li>
+                    <li class="footer_columns_bullets"><a href="#" class="footer_column_links">Nous contacter</a></li>                   
                 </ul>          
         </footer>
 
