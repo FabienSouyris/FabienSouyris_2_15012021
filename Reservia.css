@@ -32,81 +32,94 @@ a
     text-decoration: none;
 }
 
-li:hover
+/*li:hover
 {
-    text-decoration: underline;
     transform:scale(1.03);
-}
+}*/
 
 figure, h3, p 
 {
     margin: 0;
 }
 
-*
-{
-    box-sizing: border-box;
-}
-
 #main_menu
 {
     margin: auto;
-    padding:35px;   
+    margin-top:0px;
+    margin-left:20px;   
     padding-bottom:0; 
 }
 
 #logo_reservia
 {
-    width:100%;   
+    width:100%;
+    height:111px;
+    line-height:168px;
+    margin-left: 33px;  
 }
+
 
 #list_menu
 {   
     margin: 0;
     display: flex;   
     list-style-type: none;
-    padding-right: 10px;
+    
 }
 /*créer une classe pour les deux premiers liens*/
+
+#first_li
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: 53px;
+    height:111px;
+    line-height: 111px;
+    border-top: 2px solid #0065fc;
+}
 
 #first_link
 {
     display:block;
-    height: 50px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-right: 67px;  
-    line-height: 50px;  
-    border-top: 2px solid #0065fc;
+    height: 111px;
+    line-height: 111px;  
     color: #0065fc;
     text-decoration: none;
     
 }
 
+#second_li
+{
+    border-top: 2px solid transparent; 
+    margin-right: 70px; 
+}
 #second_link
 {
     display:block;
-    height: 50px;
-    border-top: 2px solid transparent; 
-    margin-right: 67px;  
-    line-height: 50px;    
+    height: 111px;
+    line-height: 111px;    
     color: #000;
     text-decoration: none;   
+}
+
+#third_li
+{
+    border-top: 2px solid transparent;
+    margin-right:79px;
 }
 
 #third_link
 {
     display:block;
-    height: 50px;
-    font-weight: bold;
-    border-top: 2px solid transparent;
-    line-height: 50px;  
+    height: 111px;
+    font-weight: bold;    
+    line-height: 111px;  
     color: #0065fc;
-    text-decoration: none;
+    text-decoration: none;    
 }
 
 
-/*Main part: Honstings and activities*/
+/*Main part: Hostings and activities*/
 
 #main_part
 {
@@ -115,13 +128,13 @@ figure, h3, p
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    padding:35px;
-    padding-top:10px;
+    padding:55px;
+    padding-top:0;
 }
 
 #search
 {
-    
+
 }
 
 #map_marker
@@ -139,13 +152,16 @@ figure, h3, p
 
 #search_title
 {
-    margin-bottom:0.5rem;
-    font-weight: 10000;
+    font-size: 22.5px;
+    font-weight: 1000;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 10px;
 }
 
 #search_paragraph
 {
-    margin-top: 10px;
+    margin-top:0;
 }
 .search_bar
 {
@@ -153,7 +169,7 @@ figure, h3, p
     flex-wrap: wrap;
     max-width: 100%;
     overflow: auto;
-    margin-top: 15px;
+    margin-top: 21px;
 }
 
 #search_input_1
@@ -162,9 +178,10 @@ figure, h3, p
     border-left:0;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
-    padding: 0 1.5rem;
-    width: 300px;
+    padding: 0 15px;
+    width: 235px;
     box-sizing: border-box;
+    font-size: 18.5px;
     font-weight: bold;
     color: #000;
     font-family: 'Raleway';
@@ -201,7 +218,8 @@ figure, h3, p
     border-left:0;
     border-top: 1px solid #f2f2f2;
     border-bottom: 1px solid #f2f2f2;
-    padding: 0 1.5rem;
+    padding: 0 5px;
+    font-size: 17px;
     width: 160px;
     box-sizing: border-box;
     font-weight: bold;
@@ -237,9 +255,9 @@ figure, h3, p
     color: #fff;
     font-weight: bold;
     border: none;
-    border-radius: 0 1rem 1rem 0;
-    padding: 0 1.5rem;
-    font-size: 1rem;
+    border-radius: 0 15px 15px 0;
+    padding: 0 19px;
+    font-size: 17.5px;
     cursor: pointer;
 }
 
@@ -255,27 +273,29 @@ figure, h3, p
 .filters
 {
     display: flex;
-    margin-top: 2rem;
+    margin-top: 29px;
     flex-wrap: wrap;
 }
 
 
 #filters_title
 {
-    margin-right: 35px;
-    line-height: 56px;
+    margin-right: 34px;
+    margin-left: 7px;
+    line-height: 48px;
 }
 
 .filters_style
 {
     display: flex;
     align-items: center;
-    margin-right: 35px;
+    margin-right: 27px;
     border: 2px solid #d9d9d9;
     border-radius: 5rem;
     margin-bottom: 1rem;
     cursor: pointer;
     font-weight: bold;    
+    transition: transform linear 0.21s
 }
 
 .filters_style:hover
@@ -289,23 +309,26 @@ figure, h3, p
     align-items: center;
     justify-content: center;    
     border-radius: 100%;
-    min-height: 3.5rem;
-    min-width: 3.5rem;
+    min-height: 49px;
+    min-width: 49px;
     background-color: #DEEBFF;
     color: #0065fc;
-    margin: -2px;
+    font-size:20px;
+    margin: 0px;
 }   
 
 .filters_text_style
 {
-    margin: 0 1rem;
+    margin-left: 9px;
+    margin-right: 22px;
+    font-size:18px;
 }
     
 #complementary_infos
 {
     display:flex;
     align-items:center;
-    margin: 0.5rem 0 1.5rem 0;
+    margin: 15px 0 15px 0;
 }
 
 #complementary_infos_icon
@@ -317,7 +340,7 @@ figure, h3, p
     min-width: 2rem;
     border: solid 1px #d9d9d9;
     border-radius: 100%;
-    margin-right: 1rem;
+    margin-right: 7px;
 }
 
 .info_icon
@@ -325,12 +348,20 @@ figure, h3, p
     color: #0065fc;
 }
 
+
+#complementary_infos_text
+{
+    line-height: 40px;
+    height: 40px;
+}
+
+
 #hosting
 {
     display: flex;
     justify-content: space-between;   
     width: 100%; 
-    margin-top:25px;
+    margin-top:20px;
 }
 
     
@@ -340,13 +371,15 @@ figure, h3, p
   background-color: #f2f2f2;
   margin-right: 50px;
   width: 100%;  
-  border-radius: 1.5rem;
-  padding: 20px;
+  border-radius:20px;
+  padding: 15px;
 }
 
 #hosting_main_title
 {
-    margin-left: 50px;
+    margin-left: 25px;
+    margin-bottom: 8px;
+    margin-top: 13px;
 }
 
 #hosting_main_list
@@ -361,8 +394,8 @@ figure, h3, p
 {
     min-width: 175px;
     width: 100%;
-    max-width: 340px;
-    height: 270px;
+    max-width: 235px;
+    height: 200px;
     border: 5px solid #fff;
     border-radius: 1rem;
     box-shadow:
@@ -376,6 +409,12 @@ figure, h3, p
     background-color: #fff;
     overflow: hidden;
     margin: 10px;
+    transition: transform linear .25s;
+ }
+
+ .hosting_main_cards:hover
+ {
+    transform:scale(1.03);
  }
 
  .hosting_main_cards_link
@@ -401,19 +440,20 @@ figure, h3, p
 .hosting_main_cards_images
 {
     width: 100%;
-    height: 170px;
+    height: 115px;
     object-fit: cover;
 }
 
 .hosting_cards_title
 {
     color: #000;
-    
+    font-size:16px;
 }
 
 .hosting_cards_text
 {
     color: #000;
+    font-size:15px;    
 }
 
 .hosting_cards_text_price
@@ -444,8 +484,8 @@ figure, h3, p
     text-decoration: none;
     color: #000;
     font-weight: bold;
-    margin-left:50px;
-    margin-top : 35px;
+    margin-left: 25px;
+    margin-top : 40px;
     margin-bottom: 10px;
     font-size: large;
 }
@@ -460,19 +500,19 @@ figure, h3, p
    
    background-color: #f2f2f2;
    width: 100%;
-   max-width: 500px; 
-   border-radius: 1.5rem;
-   padding: 25px;
+   max-width: 420px; 
+   border-radius: 20px;
+   padding: 28px 20px;
 }
 
 #popular_hosting_title
 {
     display: flex;    
-    justify-content: space-between;    
-    margin-right: 50px;  
-    margin-top: 0; 
-    margin-bottom: 0; 
+    justify-content: space-between;  
+    margin:0;
     width: 100%;
+    padding-right: 20px;
+    padding-left: 15px;
 
 }
 
@@ -486,14 +526,16 @@ figure, h3, p
 {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .popular_hosting_cards
 {
     display: flex;
     width: 100%;
-    max-width: 450px;
-    height: 180px;
+    max-width: 350px;
+    height: 140px;
     border: 5px solid #fff;
     border-radius: 1rem;
     box-shadow:
@@ -503,21 +545,36 @@ figure, h3, p
         0 11.2px 20.8px rgba(0, 0, 0, 0.042),
         0 20.9px 38.9px rgba(0, 0, 0, 0.05),
         0 50px 93px rgba(0, 0, 0, 0.07);
-    /*padding:5px;*/
     background-color: #fff;
     overflow: hidden;
-    margin-top: 25px;
+    margin-top: 37px;
+    transition: transform linear .25s;
+    
  }
+
+ .popular_hosting_cards:hover
+ {
+    transform:scale(1.03);
+ }
+ 
+#popular_hosting_cards_1
+{
+    margin-top:32px;
+}
 
 .popular_hosting_link
 {
+    color:black;
     display:flex;
+    text-decoration: none;
 }
 
 .popular_hosting_cards_images
 {
+    display:block;
     height:100%;
-    width: 175px;
+    min-width: 120px;
+    width:120px;
     object-fit: cover;
 }
 
@@ -526,13 +583,26 @@ figure, h3, p
     display: flex;
     flex-flow: column nowrap;
     height: 100%;
-    padding: 9px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right:11px;
+}
+
+.popular_hosting_cards_title
+{
+    font-size:16.5px;
+}
+.popular_hosting_cards_text
+{
+    height:100%;
+    font-size:15.5px;
 }
 
 .popular_hosting_stars
 {
     display:flex;
     flex-flow: row nowrap;
+    margin-bottom:5px;
     
 }
 
@@ -541,20 +611,20 @@ figure, h3, p
 #activities
 {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 45px;
 }
 
 #activities_main_title
 {
-    margin-left: 10px;
+    margin-left: 11px;
 }
 
 #activities_list
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: repeat(2, 300px);
-    grid-gap: 50px;
+    grid-template-rows: repeat(2, 220px);
+    grid-gap: 30px;
 }
 
 
@@ -609,6 +679,12 @@ figure, h3, p
     background-color: #fff;
     overflow: hidden;
     margin: 9px;
+    transition: transform linear .25s;
+}
+
+.activities_cards:hover
+{
+    transform:scale(1.03);
 }
 
 .activities_link
@@ -616,7 +692,7 @@ figure, h3, p
     display: flex;
     flex-direction: column;
     height:100%;
-    color:#000;
+    color:#000;    
 }
 
 .activities_cards_images_big
@@ -639,8 +715,8 @@ figure, h3, p
 
 .activities_cards_title
 {
-    height: 75px;
-    line-height: 75px;
+    height: 55px;
+    line-height: 55px;
     margin-left:15px;
 }
 
@@ -653,21 +729,26 @@ figure, h3, p
     width: 100%;
     background-color:#f2f2f2;
     display: flex;
+    padding-left: 45px;
+    padding-top: 25px;
 
+}
+
+.footer_columns_bullets:hover
+{
+    text-decoration: underline;
 }
 
 .footer_columns_indiv
 {
-    max-width: 100%;
-    padding: 50px;
-    width: 30%;
-    
+    max-width: 100%;    
+    width: 35%;        
 }
 
 .footer_columns_bullets_title
 {
     font-weight: bolder;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .footer_columns_bullets
@@ -684,14 +765,65 @@ figure, h3, p
 }
 
 
+/*media Queries for mobile devices*/
 
-@media all and (max-width: 1440px)
+@media all and (min-width: 1024px) and (max-width: 1120px) 
 {
+    .hosting_main_cards
+    {
+        max-width: 185px;
+        height: 180px;
+    }
+
+    .hosting_main_cards_images
+    {
+        height:80px;
+    }
+}
+
+@media all and (max-width: 1110px)
+{
+    #filters_title
+    {
+        width:100%;
+    }
+}
+
+@media all and (max-width: 1023px)
+{
+    #main_menu
+    {
+        margin:0;
+        padding:0; 
+    }
+
+    #logo_reservia
+    {
+        width:calc(100% - 80px);
+        padding-left:30px;
+        margin-left:0;        
+    }
+    
+    #main_part
+    {
+        padding: 10px;
+    }
+
+    #search
+    {
+        padding: 0px 20px;
+    }
+
     #hosting
     {
         flex-direction: column-reverse;
         flex-wrap: wrap;
         
+    }
+
+    #hosting_main
+    {
+        margin-top:35px;
     }
 
     #popular_hosting
@@ -703,54 +835,42 @@ figure, h3, p
     {
         flex-direction: row;
         justify-content: space-between;
-        
+        align-items:center;
     }
 
     .popular_hosting_cards
     {
-        max-width: 400px;
-        margin-right: 10px;
-    }
-}
-
-
-@media all and (max-width: 1050px)
-{
-    #filters_title
-    {
-        width:100%;
-    }
-}
-
-@media all and (max-width: 1024px)
-{
-    #main_header
-    {
-        padding:0;
+        margin-top: 20px;
+        margin-right:10px;
     }
 
-    #main_part
-    {
-        padding:0;
-    }
+    #popular_hosting_cards_1
 
-    #search
     {
-        width:100%;
-        padding:25px;
-    }  
-
-    #popular_hosting_list
-    {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        margin-top:20px;
     }
 
     .popular_hosting_cards_images
     {
-        width:150px;
+        min-width: 90px;
+        width: 90px;
     }    
+
+    .popular_hosting_cards_informations
+    {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .popular_hosting_cards_title
+    {
+        font-size: 15.5px;
+    }
+
+    .popular_hosting_cards_text
+    {
+        font-size: 14.5px;
+    }
 
     #activities_list
     {
@@ -760,6 +880,10 @@ figure, h3, p
         grid-gap: 10px;
     }
     
+    #footer_section
+    {
+        margin-top:35px;
+    }
     
     #activities_first_card
     {
@@ -800,12 +924,88 @@ figure, h3, p
 }
 
 
-@media all and (max-width: 768px)
+@media all and (max-width: 767px)
 {
+    #list_menu
+    {
+        margin-bottom:20px;
+    }
+
+    #logo_reservia
+    {
+    height: 50px;
+    line-height: 50px;
+    margin-left: 20px;
+    margin-top: 24px;
+    padding:0;
+    }
+
+    #first_li
+    {
+        height:50px;
+        line-height: 50px;
+        
+    }
+    
+    #first_link
+    {
+        height:50px;
+        line-height: 50px;
+        margin-top:22.5px;
+    }
+
+    #second_li
+    {
+        height:50px;
+        line-height: 50px;
+        margin-top:22.5px;
+    }
+    
+    #second_link
+    {
+        height:50px;
+        line-height: 50px;
+    }
+
+    #third_li
+    {
+        height:50px;
+        line-height: 50px;
+        margin-top:22.5px;
+    }
+    
+    #third_link
+    {
+        height:50px;
+        line-height: 50px;
+    }
+
+    #main_part
+    {
+        padding:0;
+    }
+
+    #search
+    {
+        margin-bottom:15px;
+    }
+
+    #search_paragraph
+    {
+        margin-bottom:37px;
+    }
 
     #search_input_1
     {
-        width:200px;
+        width:230px;
+    }
+
+    #search_button
+    {
+        border-radius: 15px 15px 15px 15px;
+        padding: 0 15px;
+        font-size: 17px;
+        cursor: pointer;
     }
 
     #search_button_text
@@ -816,16 +1016,51 @@ figure, h3, p
     #search_button_icon
     {
         display: inline-block;
-    }    
-        
+    } 
+    
+    .filters
+    {
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+
+    .filters_style
+    {
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+
+    .filters_text_style
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    
+    #complementary_infos_icon
+    {
+        min-height: 23px;
+        min-width: 23px;
+        margin-right: 10px;
+        font-size: 13px;
+    }
+
+    #complementary_infos_text
+    {
+        height:19px;
+        line-height: 19px;
+    }
+
     #hosting_main
     {
         background-color: white;
+        margin-top:15px;
+        padding:10px 15px;
     }
 
     #hosting_main_title
     {
-        margin-left:10px;
+        margin-left:0;
+        margin-bottom: 5px;
     }
 
     #hosting_main_list
@@ -838,19 +1073,55 @@ figure, h3, p
     min-width: 175px;
     width: 100%;
     max-width: 1000px;
-    height: 225px;
+    height: 200px;
+    margin:0;
+    margin-top:6px;
+    margin-bottom: 6px;
     }
 
     .hosting_main_cards_images
     {
         width: 100%;
-        height: 125px;
+        height: 115px;
         object-fit: cover;
+    }
+
+    .hosting_main_cards_informations
+    {
+        padding:5px 0px 5px 10px;
+        justify-content: space-evenly;
+    }
+
+    .hosting_cards_title
+    {
+        font-size:15px;
+    }
+
+    .hosting_cards_text
+    {
+        font-size:14px;
+    }
+
+    .hosting_stars
+    {
+        font-size:11.5px;
     }
 
     #hosting_main_show_more
     {
-        margin-left:10px;
+        margin-left:5px;
+        margin-top:27px;
+    }
+        
+    #popular_hosting
+    {
+        border-radius: 0;
+        padding: 35px 15px;
+    }
+
+    #popular_hosting_title
+    {
+        padding:0;
     }
     
     #popular_hosting_list
@@ -863,12 +1134,31 @@ figure, h3, p
     .popular_hosting_cards
     {
         width:100%;
-        max-width: 1000px;
+        max-width: 767px;
+        margin-right:0;
     }
 
     .popular_hosting_cards_images
     {
-        width:30%;
+        width:40%;        
+    }
+
+    .popular_hosting_cards_informations
+    {
+        padding: 6px 20px;
+    }
+
+    .popular_hosting_stars
+    {
+        margin:0;
+        font-size:11.5px;
+    }
+
+
+    #activities
+    {
+        margin-top:10px;
+        padding: 0px 15px;
     }
 
     #activities_list
@@ -919,26 +1209,30 @@ figure, h3, p
     .activities_cards_title
     {
         height: 50px;
-        line-height: 50px;
+        line-height: 65px;
+        font-size:16px;
     }
  
 
     #footer_section
     {
         flex-direction:column;      
-        margin:0;  
+        margin:0;
+        padding: 45px 15px;
+        margin-top: 45px;
     }
 
     .footer_columns_indiv    
     {
-        padding: 40px 25px;
+        padding: 0 15px;
         width:100%;
+        margin-bottom: 20px;
 
     }
 
     .footer_columns_bullets_title
     {
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     
     .footer_columns_bullets
@@ -957,8 +1251,13 @@ figure, h3, p
 
     #logo_reservia
     {
-        width:60%;
-        margin-left:10px;
+        width:calc(100% - 110px);
+    }    
+
+    #logo_reservia_img
+    {
+        margin:0;
+        padding:0;
     }
 
     #list_menu
@@ -968,46 +1267,74 @@ figure, h3, p
 
     #first_li
     {
-        order:1;
-        width:50%;
         display: flex;
         justify-content: center;
-        border-bottom: 2px solid #0065fc;
+        order:1;
+        width:50%;
+        height:37px;
+        line-height: 20px;
+        padding:0;
+        margin-right:0;
+        margin-top:21px;
+        border-bottom: 2px solid #0065fc;       
+        border-top: 2px solid #fff; 
+        text-align:center;
     }
 
     #first_link
     {
-        padding:0;
-        margin:0;
-        border-top: 2px solid #fff; 
+        height:inherit;
+        line-height:inherit;
+        margin-top:0;
     }
 
     #second_li
     {
-        order:1;
-        width:50%;   
+  
         display: flex;
         justify-content: center;
+        order:1;
+        width:50%;
+        height:37px;
+        line-height:20px;
+        padding:0;
+        margin-top:21px;
+        margin-right:0; 
         border-bottom: 2px solid #DEEBFF;
+        
     }
     
 
     #second_link
     {
+        height:inherit;
+        line-height:inherit;
         padding:0;
         margin:0;
+               
     }
 
     #third_li
     {
         order:0;
-        width:30%;
         display: flex;
         justify-content: right;
-        padding-right: 15px;
+        margin:0;
+        height:50px;
+        line-height:50px;
+        margin-top:22.5px;
     }
 
     
+}
+
+@media all and (max-width: 500px)
+{
+    .popular_hosting_cards_images 
+    {
+        width: 100%;
+        max-width: 130px;
+    }
 }
 
 @media all and (max-width: 420px)
@@ -1019,7 +1346,7 @@ figure, h3, p
     }
 }
 
-@media all and (max-width: 365px)
+@media all and (max-width: 370px)
 {
     #search
     {
@@ -1039,7 +1366,8 @@ figure, h3, p
 
     .popular_hosting_cards_images
     {
-        width: 100px;
+        width: 100%;
+        max-width:100px;
     }
 
 
