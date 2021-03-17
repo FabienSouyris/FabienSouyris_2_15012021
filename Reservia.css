@@ -11,6 +11,7 @@ html
 {
     font-size: 100%;
 }
+
 body, ul, ol
 {
     margin: 0;
@@ -32,15 +33,12 @@ a
     text-decoration: none;
 }
 
-/*li:hover
-{
-    transform:scale(1.03);
-}*/
-
 figure, h3, p 
 {
     margin: 0;
 }
+
+/*Style of the header*/
 
 #main_menu
 {
@@ -66,7 +64,7 @@ figure, h3, p
     list-style-type: none;
     
 }
-/*créer une classe pour les deux premiers liens*/
+
 
 #first_li
 {
@@ -132,6 +130,8 @@ figure, h3, p
     padding-top:0;
 }
 
+/*search section*/
+
 #map_marker
 {
     border-radius: 1rem 0 0 1rem;
@@ -152,6 +152,7 @@ figure, h3, p
 {
     margin-top:0;
 }
+
 .search_bar
 {
     display: flex;
@@ -198,8 +199,6 @@ figure, h3, p
    color:    #000;
 }
 
-
-
 #search_input_2
 {
     display:none;
@@ -219,17 +218,21 @@ figure, h3, p
 #search_input_2::-webkit-input-placeholder { /* WebKit, Blink, Edge */
     color:    #000;;
 }
+
 #search_input_2:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
    color:    #000;;
    opacity:  1;
 }
+
 #search_input_2::-moz-placeholder { /* Mozilla Firefox 19+ */
    color:    #000;;
    opacity:  1;
 }
+
 #search_input_2:-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #000;;
 }
+
 #search_input_2::-ms-input-placeholder { /* Microsoft Edge */
    color:    #000;;
 }
@@ -261,7 +264,6 @@ figure, h3, p
     margin-top: 29px;
     flex-wrap: wrap;
 }
-
 
 #filters_title
 {
@@ -340,6 +342,7 @@ figure, h3, p
     height: 40px;
 }
 
+/*Hosting section*/
 
 #hosting
 {
@@ -349,7 +352,7 @@ figure, h3, p
     margin-top:20px;
 }
 
-    
+/*main hosting section*/
 
 #hosting_main
 {
@@ -373,7 +376,6 @@ figure, h3, p
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
 
 .hosting_main_cards
 {
@@ -475,10 +477,7 @@ figure, h3, p
     font-size: large;
 }
 
-
-
 /*Popular Hosting*/
-
 
 #popular_hosting
 {
@@ -498,7 +497,6 @@ figure, h3, p
     width: 100%;
     padding-right: 20px;
     padding-left: 15px;
-
 }
 
 #popular_hosting_chart
@@ -535,12 +533,12 @@ figure, h3, p
     margin-top: 37px;
     transition: transform linear .25s;
     
- }
+}
 
- .popular_hosting_cards:hover
- {
+.popular_hosting_cards:hover
+{
     transform:scale(1.03);
- }
+}
  
 #popular_hosting_cards_1
 {
@@ -577,6 +575,7 @@ figure, h3, p
 {
     font-size:16.5px;
 }
+
 .popular_hosting_cards_text
 {
     height:100%;
@@ -588,7 +587,6 @@ figure, h3, p
     display:flex;
     flex-flow: row nowrap;
     margin-bottom:5px;
-    
 }
 
 /*Activities*/
@@ -705,9 +703,7 @@ figure, h3, p
     margin-left:15px;
 }
 
-
 /*Footer*/
-
 
 #footer_section
 {
@@ -749,7 +745,6 @@ figure, h3, p
     color: inherit;
 }
 
-
 /*media Queries for mobile devices*/
 
 @media all and (min-width: 1024px) and (max-width: 1120px) 
@@ -774,7 +769,7 @@ figure, h3, p
     }
 }
 
-@media all and (max-width: 1023px)
+@media all and (max-width: 1023px) /*Media querie for mobile tablets*/
 {
     #main_menu
     {
@@ -909,7 +904,7 @@ figure, h3, p
 }
 
 
-@media all and (max-width: 767px)
+@media all and (max-width: 767px) /**media querie for smartphones*/
 {
     #list_menu
     {
@@ -918,11 +913,11 @@ figure, h3, p
 
     #logo_reservia
     {
-    height: 50px;
-    line-height: 50px;
-    margin-left: 20px;
-    margin-top: 24px;
-    padding:0;
+        height: 50px;
+        line-height: 50px;
+        margin-left: 20px;
+        margin-top: 24px;
+        padding:0;
     }
 
     #first_li
@@ -1055,13 +1050,13 @@ figure, h3, p
 
     .hosting_main_cards
     {
-    min-width: 175px;
-    width: 100%;
-    max-width: 1000px;
-    height: 200px;
-    margin:0;
-    margin-top:6px;
-    margin-bottom: 6px;
+        min-width: 175px;
+        width: 100%;
+        max-width: 1000px;
+        height: 200px;
+        margin:0;
+        margin-top:6px;
+        margin-bottom: 6px;
     }
 
     .hosting_main_cards_images
@@ -1227,7 +1222,7 @@ figure, h3, p
 
 }
 
-@media all and (max-width: 600px)
+@media all and (max-width: 600px) /*reajusting the header menu to fit better the smartphones screen sizes*/
 {
     #main_menu
     {
@@ -1313,7 +1308,7 @@ figure, h3, p
     
 }
 
-@media all and (max-width: 500px)
+@media all and (max-width: 500px) /*Fix values for popular hosting cards images to stay at a readable width*/
 {
     .popular_hosting_cards_images 
     {
@@ -1331,7 +1326,7 @@ figure, h3, p
     }
 }
 
-@media all and (max-width: 370px)
+@media all and (max-width: 370px) /*changing search input bar width and placeholder for better fitting withing the page */
 {
     #search
     {
